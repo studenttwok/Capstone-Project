@@ -62,7 +62,9 @@ public class DMRDownloaderService extends IntentService {
 
         // Users table
         // Radio ID,Callsign,Name,City,State,Country,Home Repeater,Remarks
-        if (currentTimeInMs - PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_USERS_UPDATE_TS, 0) > timeOutInMs) {
+        //if (currentTimeInMs - PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_USERS_UPDATE_TS, 0) > timeOutInMs) {
+        // No timeout, just download once...
+        if (PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_USERS_UPDATE_TS, 0) == 0) {
 
             listToAded.clear();
             request = new Request.Builder().url(usersUrl).build();
@@ -121,7 +123,8 @@ public class DMRDownloaderService extends IntentService {
 
         // Repeaters Table
         // Repeater ID,Callsign,City,State,Country,Frequency,Color Code,Offset,Assigned,TimeSlot,Trustee,IPSC,LAT,LNG
-        if (currentTimeInMs - PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_REPEATERS_UPDATE_TS, 0) > timeOutInMs) {
+        //if (currentTimeInMs - PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_REPEATERS_UPDATE_TS, 0) > timeOutInMs) {
+        if (PreferenceManager.getDefaultSharedPreferences(this).getLong(Constant.PREFERENCE_REPEATERS_UPDATE_TS, 0) == 0) {
 
             // Uri
             Uri repeaterUri = DMRContract.RepeaterEntity.CONTENT_URI;

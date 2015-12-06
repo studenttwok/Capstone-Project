@@ -11,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        resValue "string", "map_api_key", "GOOGLE_MAP_API_KEY"
+        resValue "string", "map_api_key", "API KEY HERE"
 
     }
 
