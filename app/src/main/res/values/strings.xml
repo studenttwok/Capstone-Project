@@ -1,0 +1,61 @@
+<resources>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="app_name">DMR-MARC</string>
+    <string name="noConnection">No Connection. Database need to be download at once before you can use this app.\nPlease check the connection and restart the app to try again.</string>
+    <string name="search">Search</string>
+
+    <string name="repeater">Repeater</string>
+    <string name="user">User</string>
+
+    <string name="searchResultOf">Search result of %s</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_addToFavourite">Add To Favourite</string>
+
+    <!-- for Repeater Detail -->
+    <string name="repeater_detail">Repeater detail</string>
+    <string name="repeater_id">Repeater ID</string>
+    <string name="repeater_callsign">Callsign</string>
+    <string name="repeater_city">City</string>
+    <string name="repeater_state">State</string>
+    <string name="repeater_country">Country</string>
+    <string name="repeater_frequency">Frequency</string>
+    <string name="repeater_color_code">Color Code</string>
+    <string name="repeater_offset">Offset</string>
+    <string name="repeater_assigned">Assigned</string>
+    <string name="repeater_timesolt">TimeSlot</string>
+    <string name="repeater_trustee">Trustee</string>
+    <string name="repeater_ipsc">IPSC</string>
+    <string name="repeater_lat">Lat</string>
+    <string name="repeater_lng">Lng</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="user_id">User ID</string>
+    <string name="user_name">Name</string>
+    <string name="user_city">City</string>
+    <string name="user_state">State</string>
+    <string name="user_country">Country</string>
+    <string name="user_homerepeater">Home Repeater</string>
+    <string name="user_remarks">Remarks</string>
+
+    <string name="user_recentactivity">Recent Activity</string>
+    <string name="user_networkToShow">Unable to connect to server. Connect to Internet to query the recent activities</string>
+    <string name="user_norecentactivity">No recent Activity.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="fav_addToFav">Add To Favourite</string>
+
+    <string name="empty">Empty</string>
+    <string name="favouritedRepeaters">Favourite Repeaters</string>
+
+    <string name="ad">Ad</string>
+    <string name="downloadingData">Downloading data...</string>
+    <string name="share">Share</string>
+    <string name="detailsOfRepeaterWillBeDisplayedHere">Details of Repeater will be displayed here.</string>
+    <string name="fav">Favourite Repeaters</string>
+
+    <string name="shareLineFormat" translatable="false">----------\nID: %s\nCallsign: %s\nFreq: %s\nOffset:%s\nTS:%s\nCC: %s\nInfo:%s\n----------\n</string>
+    <string name="transition_userId" translatable="false">UserId</string>
+    <string name="shareWith">Share with</string>
+</resources>
